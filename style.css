@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07000a;
+    color: white;
+}
+
+body.locked {
+    overflow: hidden;
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff2c75, #ff005c);
+    padding: 16px 100px;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn.big {
+    font-size: 22px;
+    padding: 20px 50px;
+}
+
+/* TOPO */
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 10%;
+    background: radial-gradient(circle, #300020, #07000a);
+}
+
+.top-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.top-media {
+    flex: 1;
+    min-width: 280px;
+}
+
+.top-media video {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* SEÇÕES */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 40px;
+}
+
+.section.dark {
+    background: rgba(255,255,255,0.03);
+}
+
+.text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.media img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* GRID */
+.preview-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.preview-grid img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* VIDEO */
+.video-box video {
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* AGE GATE */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999;
+}
+
+/* MODAL */
+.modal {
+    background: #0e0e0e;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(255,0,100,0.4);
+}
+
+.logo {
+    color: #ff2f8f;
+}
+
+.desc {
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.accept {
+    background: linear-gradient(45deg,#ff006a,#ff2f8f);
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.exit {
+    background: #222;
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    color: #aaa;
+    cursor: pointer;
+}
