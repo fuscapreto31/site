@@ -53,24 +53,24 @@ body.locked {
 
 .top {
   display: flex;
-  flex-direction: column; /* empilha verticalmente: texto em cima, mídia embaixo */
+  flex-direction: column; /* empilha verticalmente */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* mantém o texto no topo */
   text-align: center;
-  padding: 40px 20px; /* espaço interno */
+  padding: 40px 20px;
 }
 
 .top-media {
-  margin-top: 20px; /* distância do texto para a mídia */
+  margin-top: 20px; /* distância do texto */
   width: 100%;
-  max-width: 600px; /* largura máxima */
+  max-width: 600px; /* controla largura máxima da imagem */
 }
 
-.top-media video,
 .top-media img {
-  width: 100%;
+  width: 100%; /* ocupa toda a largura da div, mas limitado pelo max-width */
+  height: auto; /* mantém proporção correta */
   border-radius: 20px;
-  object-fit: cover; /* para o vídeo ocupar bem o espaço */
+  object-fit: cover; /* mantém imagem centralizada e proporcional */
 }
 
 
@@ -177,5 +177,6 @@ body.locked {
     color: #aaa;
     cursor: pointer;
 }
+
 
 
