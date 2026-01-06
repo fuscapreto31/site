@@ -51,6 +51,29 @@ body.locked {
   max-width: 600px; /* opcional, controla largura do vídeo */
 }
 
+.top {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente: texto em cima, mídia embaixo */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px; /* espaço interno */
+}
+
+.top-media {
+  margin-top: 20px; /* distância do texto para a mídia */
+  width: 100%;
+  max-width: 600px; /* largura máxima */
+}
+
+.top-media video,
+.top-media img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover; /* para o vídeo ocupar bem o espaço */
+}
+
+
 }
 
 /* SEÇÕES */
@@ -154,4 +177,5 @@ body.locked {
     color: #aaa;
     cursor: pointer;
 }
+
 
